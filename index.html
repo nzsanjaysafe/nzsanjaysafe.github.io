@@ -1,42 +1,23 @@
-<select name=”clr” onchange=”document.bgColor=this.options[this.selectedIndex].value” size=”1″>
-    <br>
-    <option value=”black”>black
-        <option value=”orange”>orange
-            <option value=”flamingred”>fuschia
-                <option value=”lightyellow”>light yellow
-                    <option value=”green”>green
-                        <option value=”cyan”>cyan
-                            <option value=”yellow”>yellow
-                                <option value=”red”>red
-                                    <option value=”white”>white</option>
-</select>&nbsp;&nbsp;Background Color
-
-<br>
-<select name=”clr” onchange=”document.fgColor=this.options[this.selectedIndex].value” size=”1″>
-    <br>
-    <option value=”black”>black
-        <option value=”orange”>orange
-            <option value=”flamingred”>fuschia
-                <option value=”lightyellow”>light yellow
-                    <option value=”cyan”>cyan
-                        <option value=”yellow”>yellow
-                            <option value=”red”>red
+<button type="button"
+onclick="changeColor()">
+Change To Black Background!</button>
  
-                                
-        <font color="red">This is some text!</font>
-        
-</select>&nbsp;&nbsp;Text Color                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-    
-    
-
+ 
+<script>
+function changeColor() {
+    var x = document.getElementsByClassName("site");
+    x[0].style.background = 'black';
+    x[0].style.color= 'white';
+ 
+var y = document.getElementsByClassName("site-content");
+    y[0].style.background = 'black';
+    y[0].style.color= 'white';
+ 
+var z = document.getElementsByClassName("entry-content");
+    z[0].style.background = 'black';
+    z[0].style.color= 'white';
+}
+</script>
+JavaScript Let Visitors Change Background Color was last modified: 
 
 
